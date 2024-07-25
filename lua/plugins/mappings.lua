@@ -20,10 +20,13 @@ return {
         ["-"] = { "<CMD>Oil<CR>", desc = "Open parent directory" },
         -- tables with the `name` key will be registered with which-key if it's installed
         -- this is useful for naming menus
+        ["<leader>;"] = { "<cmd>terminal<cr><cmd>startinsert<cr>", desc = "Open term with tab" },
       },
       t = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
+        ["<esc>"] = { "<C-\\><C-n>", desc = "Back to normal mode" },
+        ["<leader>;"] = { "<cmd>terminal<cr><cmd>startinsert<cr>", desc = "Open term with tab" },
       },
     },
   },
